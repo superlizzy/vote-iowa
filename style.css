@@ -1,0 +1,182 @@
+body {
+
+    background-color: #ffffff;
+    color: #000000;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1em;
+    margin: 0px;
+    padding: 0px;
+}
+
+p {
+    margin: 0px 15px;
+}
+
+#page {
+}
+
+header {
+    background-color: #99ceff;
+    padding: 20px;
+}
+
+header h1 {
+    font-size: 4em;
+    text-shadow: 1px 1px #ffffff;
+    margin: 0;
+}
+
+header h1, h2 {
+    color: #333;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: normal;
+}
+
+nav {
+    text-align: center;
+    margin-top: 50px;
+}
+
+nav ul li {
+    background-color: #66b5ff;
+    display: inline;
+    margin: 10px;
+    padding: 10px;
+    border: solid 1px #005cb3;
+    border-radius: 3px;
+}
+
+nav a {
+    color: #ffffe6;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: #005cb3;
+    text-decoration: none;
+}
+
+h1 {
+    margin: 15px;
+}
+
+h2 {
+    margin: 15px;
+}
+
+h3 {
+    margin: 15px;
+
+}
+
+h4 {
+    margin: 15px;
+    color: #ff6666;
+    text-transform: uppercase;
+}
+
+#content {
+    width: 60%;
+    float: left;
+    margin: 0px;
+}
+
+article {
+}
+
+article.register {
+    background-image: url(flag.jpg);
+    height: 400px;
+}
+
+a.button {
+    position: absolute;
+    margin: 250px 0px 0px 60%;
+    background-color: #ff0000;
+    border: solid #ff0000 1px;
+    border-radius: 3px;
+    padding: 20px;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 1.5em;
+    text-decoration: none;
+}
+
+a:hover.button {
+    background-color: #ff6666;
+}
+
+article.status {
+    text-align: center;
+    margin-top: 20px;
+}
+
+article.dates {
+    border: dashed #ff6666 1px;
+    border-radius: 3px;
+    margin: 15px;
+    background-color: #eee;
+}
+
+article.dates hr {
+    width: 70%;
+    border: solid #ccc 1px;
+
+}
+
+article.dates p, article.dates h4 {
+    margin: 5px;
+    padding: 0px;
+    font-size: .9em;
+}
+
+aside {
+    width: 40%;
+    float: right;
+    font-size: .9em;
+    color: #666666;
+}
+
+aside h4 {
+    color: #666;
+}
+
+aside p, ul li {
+    margin-right: 15px;
+}
+
+ul {
+
+}
+
+li {
+
+}
+
+footer {
+    clear: both;
+    padding: 20px;
+    background-color: #333333;
+    font-size: .8em;
+}
+
+footer nav ul li {
+    border: none;
+    background-color: transparent;
+    display: block;
+    width: 150px;
+    text-align: left;
+    font-weight: normal;
+    margin: 2px;
+    padding: 0;
+}
+
+footer nav ul li a {
+    color: #005cb3;
+    font-weight: normal;
+}
+
+a {
+
+}
