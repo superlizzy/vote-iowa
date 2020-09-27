@@ -12,16 +12,6 @@ p {
     margin: 0px 15px;
 }
 
-a {
-    color: #005cb3;
-    text-decoration: none;
-}
-
-a:hover {
-    color: #0084ff;
-    text-decoration: none;
-}
-
 #page {
 }
 
@@ -48,24 +38,23 @@ nav {
 }
 
 nav ul li {
-    display: inline;
-    
-}
-
-nav a {
     background-color: #66b5ff;
-    color: #ffffe6;
-    text-decoration: none;
-    font-weight: bold;
+    display: inline;
     margin: 10px;
     padding: 10px;
     border: solid 1px #005cb3;
     border-radius: 3px;
 }
 
-nav a:hover {
-    background-color: #005cb3;
+nav a {
     color: #ffffe6;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: #005cb3;
+    text-decoration: none;
 }
 
 h1 {
@@ -83,7 +72,7 @@ h3 {
 
 h4 {
     margin: 15px;
-    color: hsl(0, 100%, 35%);
+    color: #ff6666;
     text-transform: uppercase;
 }
 
@@ -104,8 +93,8 @@ article.register {
 a.button {
     position: absolute;
     margin: 250px 0px 0px 60%;
-    background-color: hsla(0, 100%, 35%, 0.95);
-    border: solid hsl(0, 100%, 35%) 1px;
+    background-color: #ff0000;
+    border: solid #ff0000 1px;
     border-radius: 3px;
     padding: 20px;
     color: #ffffff;
@@ -115,8 +104,7 @@ a.button {
 }
 
 a:hover.button {
-    background-color: hsla(0, 100%, 35%, 0.75);
-    border-color: hsla(0, 100%, 35%, 0.8);
+    background-color: #ff6666;
 }
 
 article.status {
@@ -125,7 +113,7 @@ article.status {
 }
 
 article.dates {
-    border: solid #666 1px;
+    border: dashed #ff6666 1px;
     border-radius: 3px;
     margin: 15px;
     background-color: #eee;
@@ -174,33 +162,18 @@ footer {
 }
 
 footer nav ul li {
-
+    border: none;
+    background-color: transparent;
     display: block;
     width: 150px;
     text-align: left;
     font-weight: normal;
-
+    margin: 2px;
+    padding: 0;
 }
 
 footer nav ul li a {
     color: #005cb3;
-    font-weight: normal;
-    border: none;
-    background-color: transparent;
-    margin: 2px;
-    padding: 0;
-    text-align: left;
-    font-weight: normal;
-}
-
-footer nav ul li a:hover {
-    color: #0084ff;
-    font-weight: normal;
-    border: none;
-    background-color: transparent;
-    margin: 2px;
-    padding: 0;
-    text-align: left;
     font-weight: normal;
 }
 
