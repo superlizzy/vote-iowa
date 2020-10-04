@@ -27,7 +27,7 @@ function oldEnough() {
 
     var birthday = prompt('Please enter your date of birth:', 'MM/DD/YYYY');
     var bdayInt = Number(new Date(birthday));
-    var electionInt = Number(new Date('Oct 29, 2020')); //5 days before 11/03/2020 to get calculation right
+    var electionInt = Number(new Date('Nov 3, 2020')); 
     var electionAgeMil = electionInt-bdayInt;
     var electionAge = Math.floor(electionAgeMil/31536000000);
 
