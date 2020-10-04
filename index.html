@@ -4,7 +4,7 @@
         <title>
             Vote Iowa | Iowans Prepare for 2020
         </title>
-        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="css/style.css">
     </head>
     <body>
         <div id="page">
@@ -20,16 +20,19 @@
                 </nav>
             </header>
 
-            <article class="register">
+            <section class="register">
+                <p id="welcome"></p>
+                <p id="countdown">
+                <p>UNTIL ELECTION DAY</p>
                 <a href="https://mymvd.iowadot.gov/Account/Login?ReturnUrl=%2fVoterRegistration" target="_blank" class="button">Register to Vote in Iowa</a>
-               </article>
+            </section>
 
         <div id="content">
             
             
                     <article class="status">
-                         <p>Not sure if you're currently registered to vote in Iowa? 
-                             <br><a href="https://sos.iowa.gov/elections/voterreg/regtovote/search.aspx" target="_blank">Check your status here</a></p>
+                         <h3>Not sure if you're currently registered to vote in Iowa?</h3>
+                             <a href="https://sos.iowa.gov/elections/voterreg/regtovote/search.aspx" target="_blank">Check your status here</a>
                     </article>
                  
                     <article class="dates">
@@ -59,7 +62,7 @@
             </div>
         <aside>
             <h4>Eligibility:</h4>
-            <p><i>From the Iowa Secretary of State webpage.</i></p>
+
             <p>To vote in Iowa, you must be registered to vote.</p>
             <p><b>To qualify to register to vote, you must be:</b></p>
             <ul>
@@ -68,12 +71,18 @@
                 <li>At least 17 years old. 
                     <br>(A person may vote if they will be 18 years old on or before election day. In the case of primary elections, a person may vote if they will be 18 years old on or before the corresponding regular election.)</li>
                 </ul>
+
             <p><b>You cannot:</b></p>
             <ul>
                 <li>Be a convicted felon (unless your <a href="https://sos.iowa.gov/elections/voterinformation/restorerights.html" target="_blank">voting rights</a> have been restored),</li>
                 <li>Be judged mentally incompetent to vote by a court, or</li>  
                 <li>Claim the right to vote in any other place.</li>
             </ul>
+
+            <div id="birthday"><h3>Are you old enough to register to vote?</h3>
+                <button onclick="oldEnough()">Find out!</button>
+                <p id="canRegister"></p>
+                </div>
         </aside>
 
 
@@ -88,5 +97,7 @@
                 </nav>
             </footer>
     </div>
+
+<script src="js/script.js"></script>
 </body>
 </html>
