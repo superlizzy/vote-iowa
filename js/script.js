@@ -1,8 +1,31 @@
 'use strict';
 console.log('Connected.');
 
+// Greeting
+
+function welcomeGreeting() {
+    var today = new Date();
+    var hourNow = today.getHours();
+    var greeting;
+
+    if (hourNow > 18) {
+        greeting = 'Good evening! It is ';
+    } else if (hourNow > 12) {
+        greeting = 'Good afternoon! It is ';
+    } else if (hourNow > 0) {
+        greeting = 'Good morning! It is ';
+    } else {
+        greeting = 'Welcome! It is ';
+    }
+
+    document.getElementById("welcome").innerHTML = '<h3>' + greeting + '</h3>';
+}
+
+welcomeGreeting();
+
 // COUNTDOWN TO NOV 3, 2020
 // Countdown code adapted from https://www.w3schools.com/howto/howto_js_countdown.asp
+function electionCountdown() {
 
 var countDownDate = new Date("Nov 3, 2020 00:00:00").getTime();     // Set the date we're counting down to
 
@@ -22,7 +45,9 @@ var x = setInterval(function() {                                    // Update th
         document.getElementById("countdown").innerHTML = "Thank you for voting!";
     }
     }, 1000);
+}
 
+electionCountdown();
 
 // Validate birth date
     count = 0;
@@ -96,24 +121,3 @@ var x = setInterval(function() {                                    // Update th
     
     oldEnough();
 
-// Greeting
-
-    welcomeGreeting();
-
-function welcomeGreeting() {
-    var today = new Date();
-    var hourNow = today.getHours();
-    var greeting;
-
-    if (hourNow > 18) {
-        greeting = 'Good evening! It is ';
-    } else if (hourNow > 12) {
-        greeting = 'Good afternoon! It is ';
-    } else if (hourNow > 0) {
-        greeting = 'Good morning! It is ';
-    } else {
-        greeting = 'Welcome! It is ';
-    }
-
-    document.getElementById("welcome").innerHTML = '<h3>' + greeting + '</h3>';
-}
