@@ -221,3 +221,7 @@ footer nav ul li a:hover {
     text-align: left;
     font-weight: normal;
 }
+
+#canRegister {
+    color: hsl(0, 100%, 35%); 
+}
