@@ -121,3 +121,38 @@ electionCountdown();
     
     oldEnough();
 
+
+    //Voter Registration Experience Rating 
+    //img src="images/star.png" class="star"
+
+    function rating() {
+        var count = prompt('How easy was it for you to register to vote? Enter a number between 1 and 5 below, where 1 is "Not easy" and 5 is "Very easy."')
+        var item = '<img src="images/star.png" class="star">';
+
+        while (count === '' || isNaN(count) || count < 1 || count > 5) {
+            count = prompt('Please enter a number between 1 and 5.');
+        }
+
+        if (count == 1) {
+            document.getElementById("experienceRating").innerHTML = item;
+        }
+
+        if (count == 2) {
+            document.getElementById("experienceRating").innerHTML = item + item;
+        }
+
+        if (count == 3) {
+            document.getElementById("experienceRating").innerHTML = item + item + item;
+        }
+
+        if (count == 4) {
+            document.getElementById("experienceRating").innerHTML = item + item + item + item;
+        }
+
+        if (count == 5) {
+            document.getElementById("experienceRating").innerHTML = item + item + item + item + item;
+        }
+    }
+
+
+

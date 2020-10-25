@@ -225,3 +225,15 @@ footer nav ul li a:hover {
 #canRegister {
     color: hsl(0, 100%, 35%); 
 }
+
+.star {
+    width: 20px;
+    height: 100%;
+    vertical-align: text-bottom;
+}
+
+#experienceRating {
+    position: relative;
+    margin: 0px auto 0px auto;
+    padding-top: 10px;
+}
